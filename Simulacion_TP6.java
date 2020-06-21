@@ -319,15 +319,15 @@ public class Simulacion_TP6 {
 
         for (int i = 0; i < ce; i++){
             int emp = i + 1;
-            System.out.println("El porcentaje de tiempo ocioso del empleado " + emp + " es de " + pto[i] + "%");
+            System.out.printf("El porcentaje de tiempo ocioso del empleado %d es de %d%%\n", emp, (int)Math.round(pto[i]));
         }
 
         for (int i = 0; i < cc; i++){
             int cli = i + 1;
-            System.out.println("El promedio de tiempo en sistema de comprobantes del cliente " + cli + " es de " + pps[i]);
+            System.out.printf("El promedio de atención de comprobantes del cliente %d es de %d minutos\n", cli, (int)Math.round(pps[i]));
         }
 
-        System.out.println("El promedio de permanencia de cada comprobante en minutos es de: " + pte);
+        System.out.printf("El promedio de permanencia de comprobante es de: %d minutos\n", (int)Math.round(pte));
     }
 
 }
